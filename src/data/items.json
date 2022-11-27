@@ -1,0 +1,82 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "make": "Toyota",
+            "model": "Corolla",
+            "year": 2015,
+            "price": 20000,
+            "color": "red",
+            "mileage": 10000,
+            "transmission": "automatic",
+            "vin": "12345678901234567",
+            "description": "This is a great car",
+            "image": "http://www.example.com/image.jpg"
+        },
+        {
+            "id": 2,
+            "make": "Honda",
+            "model": "Civic",
+            "year": 2016,
+            "price": 25000,
+            "color": "blue",
+            "mileage": 5000,
+            "transmission": "manual",
+            "vin": "12345678901234568",
+            "description": "This is a great car",
+            "image": "http://www.example.com/image.jpg"
+        },
+        {
+            "id": 3,
+            "make": "Ford",
+            "model": "Fusion",
+            "year": 2017,
+            "price": 30000,
+            "color": "green",
+            "mileage": 0,
+            "transmission": "automatic",
+            "vin": "12345678901234569",
+            "description": "This is a great car",
+            "image": "http://www.example.com/image.jpg"
+        },
+        {
+            "id": 4,
+            "make": "Chevrolet",
+            "model": "Cruze",
+            "year": 2018,
+            "price": 35000,
+            "color": "yellow",
+            "mileage": 0,
+            "transmission": "manual",
+            "vin": "12345678901234570",
+            "description": "This is a great car",
+            "image": "http://www.example.com/image.jpg"
+        },
+        {
+            "id": 5,
+            "make": "Nissan",
+            "model": "Altima",
+            "year": 2019,
+            "price": 40000,
+            "color": "black",
+            "mileage": 0,
+            "transmission": "automatic",
+            "vin": "12345678901234571",
+            "description": "This is a great car",
+            "image": "http://www.example.com/image.jpg"
+        },
+        {
+            "id": 6,
+            "make": "Hyundai",
+            "model": "Elantra",
+            "year": 2020,
+            "price": 45000,
+            "color": "white",
+            "mileage": 0,
+            "transmission": "manual",
+            "vin": "12345678901234572",
+            "description": "This is a great car",
+            "image": "http://www.example.com/image.jpg"
+        }
+    ]
+}
