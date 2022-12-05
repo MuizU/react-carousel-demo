@@ -1,11 +1,12 @@
-export default function Card({name, image, description, price }) {
+import style from './index.sass'
+export default function Card({make,model, image, description, price, level }) {
     return (
         <div className={style.card}>
-            <div className={style.image}>
-                <img src={image} alt={name} />
+            <div className={style.card_image}>
+                <img src={image} alt={`${make} ${model}`} height={'126px'} width={'250px'}/>
             </div>
-            <div className={style.content}>
-                <h3 className={style.title}>{name}</h3>
+            <div className={style.card_content}>
+                <h3 className={style.description}>{make} {model}</h3>
                 <p className={style.description}>{description}</p>
                 <p>{price}</p>
             </div>

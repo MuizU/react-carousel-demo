@@ -11,7 +11,7 @@
             "transmission": "automatic",
             "vin": "12345678901234567",
             "description": "This is a great car",
-            "image": "http://www.example.com/image.jpg"
+            "image": "https://images.pexels.com/photos/205337/pexels-photo-205337.jpeg"
         },
         {
             "id": 2,
@@ -24,7 +24,7 @@
             "transmission": "manual",
             "vin": "12345678901234568",
             "description": "This is a great car",
-            "image": "http://www.example.com/image.jpg"
+            "image": "https://images.pexels.com/photos/6894421/pexels-photo-6894421.jpeg"
         },
         {
             "id": 3,
@@ -50,12 +50,12 @@
             "transmission": "manual",
             "vin": "12345678901234570",
             "description": "This is a great car",
-            "image": "http://www.example.com/image.jpg"
+            "image": "https://images.pexels.com/photos/10905505/pexels-photo-10905505.jpeg"
         },
         {
             "id": 5,
             "make": "Nissan",
-            "model": "Altima",
+            "model": "Nismo 370z",
             "year": 2019,
             "price": 40000,
             "color": "black",
@@ -63,12 +63,12 @@
             "transmission": "automatic",
             "vin": "12345678901234571",
             "description": "This is a great car",
-            "image": "http://www.example.com/image.jpg"
+            "image": "https://images.pexels.com/photos/13712077/pexels-photo-13712077.jpeg"
         },
         {
             "id": 6,
             "make": "Hyundai",
-            "model": "Elantra",
+            "model": "Avante",
             "year": 2020,
             "price": 45000,
             "color": "white",
@@ -76,7 +76,7 @@
             "transmission": "manual",
             "vin": "12345678901234572",
             "description": "This is a great car",
-            "image": "http://www.example.com/image.jpg"
+            "image": "https://images.pexels.com/photos/12353734/pexels-photo-12353734.jpeg"
         }
     ]
 }
