@@ -1,21 +1,57 @@
+$level1-height: 18rem
+$level0-height: 21rem
+
+$level0-width: 15rem
+$level1-width: 12rem
+
+$level1-line-height: 1rem
+$level0-line-height: 1.5rem
+
+
+$level-1-left: 40rem
+$level0-left: 22rem
+$level1-left: 5rem
+
 .card
     background-color: #fff
-    display: flex
-    align-items: center
-    flex-direction: column
     width: 18rem
     height: 24rem
+    position: absolute
+    transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s
+    display: flex
+    flex-direction: column
     &_image
         flex: 1
-        margin-top: 10px
-        height: 100%
         img
             height: 8rem
-            width: 12rem
+            width: 100%
     &_content
         color: #000
 
-    &_title
-        font-size: 16px
-        font-weight: 700
-        line-height: 1.5
+    // &_title
+    //     font-size: 16px
+    //     font-weight: 700
+    //     line-height: 1.5
+
+
+.level-1
+    height: $level1-height
+    width: $level1-width
+    line-height: $level1-line-height
+    left: $level-1-left
+    margin-top: 10px
+
+.level0
+    height: $level0-height
+    width: $level0-width
+    line-height: $level0-line-height
+    left: $level0-left
+
+
+.level1
+    height: $level1-height
+    width: $level1-width
+    line-height: $level1-line-height
+    margin-top: 10px
+    left: $level1-left
+
