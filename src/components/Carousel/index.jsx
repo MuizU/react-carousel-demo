@@ -8,20 +8,24 @@ export default function Carousel({ children }) {
   const [direction, setDirection] = useState("right");
   const items = [...cars];
   const generateItems = useCallback(() => {
-    const carItems = [];
-    const cItems = [...cars];
+    const cItems = []
+    let currentItems = [...items];
     let level;
-    for (let i = active - 1; i <= active + 2; i++) {
-      let index = i;
+    for (let i = active - 1; i < active + 2; i++) {
+      var index = i;
       if (i < 0) {
-        index = cItems.length + i;
-      } else if (i >= cItems.length) {
-        index = i % cItems.length;
+        index = currentItems.length + i;
+      } else if (i >= currentItems.length) {
+        index = i % currentItems.length;
       }
-      level = i - active;
-      carItems.push({ level, item: cItems[index] });
-      return carItems;
+      level = active - i;
+      const currentItem = currentItems[index];
+      if (!!currentItem) {
+        cItems.push({ level, ...currentItem });
+      }
     }
+    console.log('citems: ',cItems)
+    return cItems;
   }, [active, items]);
 
   const moveLeft = useCallback(() => {
@@ -35,7 +39,7 @@ export default function Carousel({ children }) {
   }, [active, items]);
 
   return (
-    <div className={style.container}>
+    <div className={style.noselect} id={style.carousel}>
       <div
         onClick={moveLeft}
         className={style.arrow + " " + style["arrow-left"]}
@@ -44,23 +48,16 @@ export default function Carousel({ children }) {
       </div>
       <TransitionGroup>
         {generateItems().map((child, _index) => {
-          const { level, item } = child;
-          const { make, model, image, description, price } = item;
           const itemRef = createRef();
           return (
             <CSSTransition
               nodeRef={itemRef}
-              key={item.id}
+              key={child.id}
               classNames={direction}
               timeout={500}
             >
               <CarouselCard
-                make={make}
-                model={model}
-                image={image}
-                description={description}
-                price={price}
-                level={level}
+              {...child}
               />
             </CSSTransition>
           );
