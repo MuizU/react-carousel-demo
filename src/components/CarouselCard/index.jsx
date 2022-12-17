@@ -11,11 +11,12 @@ export default function Card({
     return (
         <div className={style.card + " " + style[className]}>
             <img src={image} alt={`${make} ${model}`} />
-            <h3 className={style.description}>
+            <h3>
                 {make} {model}
             </h3>
-            <p className={style.description}>{description}</p>
+            <p>{description}</p>
             <p>{price}</p>
+
         </div>
     );
 }
