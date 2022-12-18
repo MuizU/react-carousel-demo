@@ -10,7 +10,7 @@
             "mileage": "25000 miles",
             "transmission": "Automatic",
             "vin": "GHI2344567891",
-            "description": "This Ford F-150 is a versatile and powerful pickup truck that is perfect for both work and play. It features a tough exterior and a comfortable, spacious interior.",
+            "description": "This Ford F-150 is a versatile and powerful pickup truck.",
             "image": "https://images.pexels.com/photos/205337/pexels-photo-205337.jpeg"
         },
         {
@@ -23,7 +23,7 @@
             "mileage": "15000 miles",
             "transmission": "Manual",
             "vin": "DEF0987654321",
-            "description": "This Honda Civic is a sporty and reliable car with a spacious interior and fuel-efficient engine. It has been well-maintained and is ready for its next owner.",
+            "description": "This Honda Civic is a sporty and reliable car.",
             "image": "https://images.pexels.com/photos/6894421/pexels-photo-6894421.jpeg"
         },
         {
