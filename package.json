@@ -1,7 +1,8 @@
 {
   "name": "react-carousel-demo",
-  "private": true,
+  "icense": "MIT",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",

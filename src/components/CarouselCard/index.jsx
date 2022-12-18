@@ -4,6 +4,9 @@ export default function Card({
     model,
     image,
     description,
+    mileage,
+    transmission,
+    year,
     price,
     level,
 }) {
@@ -15,8 +18,10 @@ export default function Card({
                 {make} {model}
             </h3>
             <p>{description}</p>
-            <p>{price}</p>
-
+            <p>Mileage: {mileage}</p>
+            <p>Transmission: {transmission}</p>
+            <p>Year: {year}</p>
+            <p>${price}</p>
         </div>
     );
 }
