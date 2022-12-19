@@ -7,6 +7,7 @@ export default function Carousel({ children }) {
   const [active, setActive] = useState(0);
   const [direction, setDirection] = useState("right");
   const items = [...cars];
+  // TODO: Add into hook
   const generateItems = useCallback(() => {
     const cItems = []
     let currentItems = [...items];
@@ -24,16 +25,15 @@ export default function Carousel({ children }) {
         cItems.push({ level, ...currentItem });
       }
     }
-    console.log('citems: ',cItems)
     return cItems;
   }, [active, items]);
 
-  const moveLeft = useCallback(() => {
+  const moveRight = useCallback(() => {
     setActive(active === 0 ? items.length - 1 : active - 1);
     setDirection("left");
   }, [active, items]);
 
-  const moveRight = useCallback(() => {
+  const moveLeft = useCallback(() => {
     setActive((active + 1) % items.length);
     setDirection("right");
   }, [active, items]);
