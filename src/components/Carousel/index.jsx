@@ -9,10 +9,10 @@ export default function Carousel({ children }) {
   const items = [...cars];
   // TODO: Add into hook
   const generateItems = useCallback(() => {
-    const cItems = []
+    const cItems = [];
     let currentItems = [...items];
     let level;
-    for (let i = active - 1; i < active + 2; i++){
+    for (let i = active - 1; i < active + 2; i++) {
       var index = i;
       if (i < 0) {
         index = currentItems.length + i;
@@ -46,9 +46,7 @@ export default function Carousel({ children }) {
       >
         &#8592;
       </div>
-      <TransitionGroup
-              classNames={direction}
-      >
+      <TransitionGroup classNames={direction}>
         {generateItems().map((child, _index) => {
           const itemRef = createRef();
           return (
@@ -58,9 +56,7 @@ export default function Carousel({ children }) {
               classNames={direction}
               timeout={500}
             >
-              <CarouselCard
-              {...child}
-              />
+              <CarouselCard {...child} />
             </CSSTransition>
           );
         })}
